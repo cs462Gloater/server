@@ -29,7 +29,7 @@ app.configure(function() {
   app.use(app.router);
 });
 
-app.get('/gloat', function(req, res) {
+app.post('/gloat', function(req, res) {
   console.log("sending gloat for ");
   var username = req.query.username;
   //https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/7hesaint?api_key=
